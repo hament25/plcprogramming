@@ -54,27 +54,27 @@ It is a data type containing two values , i.e. 'True' and 'False'
 ```
 booleanVariable : BOOL := TRUE; 
 ```
-Type  | Values | Memory Consumption
-------------- | ------------- | ------------
-Boolean  | TRUE(1)  | 8 Bits 
-Boolean | FALSE(0)  | (1 Byte)
+Type          | Values        | Memory Consumption
+------------- | ------------- | -------------------
+Boolean       | TRUE(1)       | 8 Bits 
+Boolean       | FALSE(0)      | (1 Byte)
          
 ### 5.2 Integer  
 Type  | Lower Bound | Upper Bound | Memory Consumption | Example
 ------|-------------|-------------|--------------------|---------
 INT   | -32768      | 32768       | 16 bits(2 bytes)   | `nThisNumber : INT := -4232 `
-UINT   | 0      | 65535       | 16 bits(2 bytes)   | `nThisNumber : UINT := 42320 `
-SINT   | -128      | 127       | 8 bits(1 bytes)   | `nThisNumber : SINT := -32 `
-USINT   | 0      | 255       | 8 bits(1 bytes)   | `nThisNumber : USINT := 32 `
-DINT   | -2147483647      | 2147483647       | 32 bits(4 bytes)   | `nThisNumber : DINT := 136292311 `
-UDINT   | 0      | 4294967295       | 32 bits(4 bytes)   | `nThisNumber : UDINT := 13629231231 `
-LINT   | -2<sup>63</sup>      | 2<sup>63</sup> - 1       | 64 bits(8 bytes)   | `nThisNumber : LINT := 13629231231 `
-ULINT   | 0      | 2<sup>64</sup> - 1       | 64 bits(8 bytes)   | `nThisNumber : ULINT := 13629231231 `
-BYTE   | 0      | 255       | 8 bits(1 bytes)   | `nThisNumber : BYTE := 2#1101_0111 `
-WORD   | 0      | 65535       | 16 bits(2 bytes)   | `nThisNumber : WORD := 16#02AE `
-DWORD   | 0      | 4294967295       | 32 bits(4 bytes)   | `nThisNumber : DWORD := 16#02AE_FFFF `
-LWORD   | 0      | 2<sup>64</sup> - 1       | 64 bits(8 bytes)   | `nThisNumber : LWORD := 10#2348820191829 `
-REAL | -3.4 x 10<sup>38</sup> | 3.4 x 10<sup>38</sup> | 32 Bits(4 Bytes) | `nThisReal: REAL := 3.1417304632 `
+UINT  | 0           | 65535       | 16 bits(2 bytes)   | `nThisNumber : UINT := 42320 `
+SINT  | -128        | 127         | 8 bits(1 bytes)    | `nThisNumber : SINT := -32 `
+USINT | 0           | 255         | 8 bits(1 bytes)    | `nThisNumber : USINT := 32 `
+DINT  | -2147483647 | 2147483647  | 32 bits(4 bytes)   | `nThisNumber : DINT := 136292311 `
+UDINT | 0           | 4294967295  | 32 bits(4 bytes)   | `nThisNumber : UDINT := 13629231231 `
+LINT  | -2<sup>63</sup>| 2<sup>63</sup> - 1| 64 bits(8 bytes)   | `nThisNumber : LINT := 13629231231 `
+ULINT | 0           | 2<sup>64</sup> - 1 | 64 bits(8 bytes)   | `nThisNumber : ULINT := 13629231231 `
+BYTE  | 0           | 255         | 8 bits(1 bytes)    | `nThisNumber : BYTE := 2#1101_0111 `
+WORD  | 0           | 65535       | 16 bits(2 bytes)   | `nThisNumber : WORD := 16#02AE `
+DWORD | 0           | 4294967295  | 32 bits(4 bytes)   | `nThisNumber : DWORD := 16#02AE_FFFF `
+LWORD | 0           | 2<sup>64</sup> - 1       | 64 bits(8 bytes)   | `nThisNumber : LWORD := 10#2348820191829 `
+REAL  | -3.4 x 10<sup>38</sup>| 3.4 x 10<sup>38</sup> | 32 Bits(4 Bytes) | `nThisReal: REAL := 3.1417304632 `
 
 ### 5.3 String 
 A variable of data type STRING can accept any string. The size specification for the memory space allocation in the declaration refers to characters and is enclosed by round or square brackets. If no size is specified, TwinCAT assumes 80 characters by default.
